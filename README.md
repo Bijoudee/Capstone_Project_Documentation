@@ -2,7 +2,7 @@
 
 ### Project Overview
 ---
-This repository contains my capstone project focusing on Sales Performance Analysis for a retail store and Customer Segmentation for a Subscription Service. The project is divided into two main parts, utilizing Excel, SQL and Power Bi for comprehrensive data analysis and visualization.
+This repository contains my capstone project focusing on Sales Performance Analysis for a retail store and Customer Segmentation for a Subscription Service. The project is divided into two main parts, utilizing Excel, SQL and Power BI for comprehrensive data analysis and visualization.
 
 ### Project Status
 ---
