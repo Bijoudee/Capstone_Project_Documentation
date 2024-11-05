@@ -10,3 +10,8 @@
 - Customer behavior analysis using Excel
 - Database queries and analysis using SQL
 - Interactive dashboards using Power BI
+
+### Tools Used
+- Microsoft Excel (In Progress)
+- SQL (In Progress)
+- Power BI ( In Progress)
