@@ -25,7 +25,7 @@ This repository showcases my capstone project, which centers on Sales Performanc
 
 ### Analysis Performed
 ---
-- Pivot tables to tables to summarize total sales by product, region and month.
+- Pivot tables  to summarize total sales by product, region and month.
 - Using Excel formulas to calculate average sales per product and total revenue by region.
 - Generating additional insightful reports using charts.
 
