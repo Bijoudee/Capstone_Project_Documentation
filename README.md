@@ -11,7 +11,7 @@ This repository showcases my capstone project, which centers on Sales Performanc
   
  ### Project 1: Sales Performance Analysis for a retail Store
  ---
-  ### Current Implemtation (Excel)
+  ### Current Implementation (Excel)
 
   ### Objective
   ---
