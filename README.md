@@ -78,6 +78,22 @@ The output provides a list of product categories with their respective total sal
 
 <img width="960" alt="Screenshot 2024-12-21 210935" src="https://github.com/user-attachments/assets/ccca7e74-6ba8-418f-9e2e-d406709d5da5" />
 
+## 2.Find the Number of Sales Transaction in Each Region
+Query:
+SELECT
+Region,
+COUNT(OrderID) AS NUMBEROFSALESTRANSACTION
+FROM [SalesDB].[dbo].[Lita Capstone project sales data]
+GROUP BY Region;
+
+## Explanation:
+This query counts the number of transactions for each region. it provides insights into the volume of sales activity across ifferent locations.
+## Result:
+A table showing the total number of transactions for each region, highlighting the most active regions in term of sales. Attached is the scrrenshot of the query result.
+
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/e1e4f745-80e9-42a2-854c-1c69e9473022" />
+
+
 
 
 
