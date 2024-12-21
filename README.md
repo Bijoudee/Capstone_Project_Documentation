@@ -49,9 +49,40 @@ This repository showcases my capstone project, which centers on Sales Performanc
 
  ![Screenshot 2024-11-05 153057 png charts](https://github.com/user-attachments/assets/249af808-d5fa-44f6-93af-e7b993de5fdd)
 
+
+### SQL Insights and Queries
+---
+This section continues the analysis from the Excel portion of the project by leveraging SQL to extract deeper insights from the data. The queries below address key business questions suchs as product performance, customer behaviour, and regional sales contribution.
+Using SQL allows us to efficiently:
+- Retrieve total sales per product category.
+- Identify the top 5 customers by total purchase amount.
+- Calculate total revenue,monthly sales trends, and more.
+  
+The queries and thier corresponding results are documented below.
+
+ ## 1. Retrieve the Total Sales for Each Product Category
+Query:
+
+Select
+Product,
+SUM(CAST(Quantity AS INT) * CAST(UnitPrice AS DECIMAL(18,2))) AS TotalSales
+FROM
+[SalesDB].[dbo].[Lita Capstone project sales data]
+GROUP BY
+PRODUCT;
+
+## Explanation: 
+This query calculates the total sales for eaxh product category using rhe SUM function.The results help identify which product categories contribute the most revenue.
+## Result:
+The output provides a list of product categories with their respective total sales figures. The insights helps to identify top performing categories. Attached is the screenshot of the query result.
+
+<img width="960" alt="Screenshot 2024-12-21 210935" src="https://github.com/user-attachments/assets/ccca7e74-6ba8-418f-9e2e-d406709d5da5" />
+
+
+
+
 ### Upcoming Implementation
 ---
-- SQL Implementation (In Progress)
 - Power Bi Dashboard (In Progress)
 
 ### Project 2: Customer Segmentation for a Subscription Service
