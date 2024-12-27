@@ -164,6 +164,8 @@ SUM(CAST(Quantity AS INT) * CAST(UnitPrice AS DECIMAL(18,2))) AS TotalRevenue
 FROM [SalesDB].[dbo].[Lita Capstone project sales data]
 GROUP BY Product;
 ```
+<img width="955" alt="image" src="https://github.com/user-attachments/assets/17fd18f0-657d-46d8-8bfd-d371588e839e" />
+
 #### Explanation:
 1.SUM(CAST(Quantity AS INT) * CAST(UnitPrice AS DECIMAL(18,2))):
 - Computes the total revenue for each product.
@@ -186,13 +188,53 @@ GROUP BY Product;
 - Shoes generated the highest revenue at N613,380.00.
 - The data helps in identifying the best-performing products, assisting in inventory and marketing decisions.
 
+### 5. Monthly Sales Total For 2024
+#### Objective:
+To calculate the total monthly sales for the year 2024.
 
+``` SQL
+SELECT
+YEAR(OrderDate) AS Year,
+MONTH(OrderDate) AS Month,
+SUM(CAST(Quantity AS INT) * CAST(UnitPrice AS DECIMAL(18,2))) AS MonthlySales
+FROM  [SalesDB].[dbo].[Lita Capstone project sales data]
+WHERE
+YEAR(OrderDate) = 2024
+GROUP BY
+YEAR(OrderDate), MONTH(OrderDate)
+ORDER BY
+YEAR, MONTH;
+```
+<img width="957" alt="image" src="https://github.com/user-attachments/assets/d9340123-fa5f-460c-88f5-2535e850b22d" />
 
+#### Explanation:
+1. YEAR(OrderDate) and YEAR(OrderDate):
+- Extract the year and motn from OrderDate column.
+2. SUM(CAST(Quantity AS INT) * CAST(UnitPrice AS DECIMAL(18,2))):
+- Calculates the totla monthly sales by multiplying the quantity sold by the unit price.
+3.WHERE YEAR(OrderDate) = 2024:
+- Filters the data to include only orders from the year 2024.
+4. GROUP BY YEAR(OrderDate), MONTH(OrderDate):
+- GROUPS the data by year and month to calculate the monthly sales.
+5. ORDER BY YEAR, MONTH;
+- Ensures the results are ordered sequentially by year and month.
 
+#### Result:
 
+|Year|Month|MonthlySales (N)|
+|----|-----|----------------|
+|2024|1    |198,400.00      |
+|2024|2    |298,800.00      |
+|2024|3    |54,780.00       |
+|2024|4    |39,440.00       |
+|2024|5    |44,640.00       |
+|2024|6    |148,200.00      |
+|2024|7    |37,200.00       |
+|2024|8    |147,300.00      |
 
-
-
+#### Insights:
+- February recorded the highest sales at N298,800.00.
+- Tracking monthly sales helps in identifying trends and planning seasonal variations.
 ### Upcoming Implementation
 ---
 - Power Bi Dashboard (In Progress)
